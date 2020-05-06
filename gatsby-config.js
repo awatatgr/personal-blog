@@ -4,7 +4,25 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
+
+
+    // Used for the title template on pages other than the index site
+    siteTitle: `awata_tgr`,
+    // Default title of the page
     siteTitleAlt: `mind of awata_tgr`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `thought of awata_tgr`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://togaru.org`,
+    // Used for SEO
+    siteDescription: `thought of awata_tgr`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@awata_tgr`,
+
   },
   plugins: [
     {
@@ -26,10 +44,10 @@ module.exports = {
             name: `Twitter`,
             url: `https://twitter.com/awata_tgr`,
           },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/awata_tgr/`,
-          },
+        //  {
+        //    name: `Instagram`,
+        //  url: `https://www.instagram.com/awata_tgr/`,
+        //  },
           {
             name: `LinkedIn`,
             url: `https://www.linkedin.com/in/kentaroh-a-04130a26/`,
